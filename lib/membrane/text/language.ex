@@ -22,7 +22,7 @@ defmodule Membrane.Text.Language do
   def parse(code) when is_atom(code) do
     case MapSet.member?(@codes, code) do
       true -> {:ok, code}
-      false -> {:error, :unsupported_language}
+      false -> {:error, "unsupported language #{inspect(code)}"}
     end
   end
 end
