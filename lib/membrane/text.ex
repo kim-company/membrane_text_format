@@ -1,7 +1,9 @@
 defmodule Membrane.Text do
   @type t() :: %__MODULE__{
           encoding: :utf8,
-          language_code: Membrane.Text.Language.code()
+          locale: String.t()
         }
-  defstruct encoding: :utf8, language_code: nil
+
+  @enforce_keys [:locale]
+  defstruct [encoding: :utf8] ++ @enforce_keys
 end
