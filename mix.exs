@@ -7,13 +7,13 @@ defmodule Membrane.Text.MixProject do
     [
       app: :membrane_text_format,
       version: "1.0.0",
-      elixir: "~> 1.15",
+      elixir: "~> 1.16",
       start_permanent: Mix.env() == :prod,
       source_url: @github_url,
       name: "Membrane Text Format",
       description: description(),
       package: package(),
-      deps: deps(),
+      deps: deps()
     ]
   end
 
@@ -29,7 +29,7 @@ defmodule Membrane.Text.MixProject do
     []
   end
 
-    defp package do
+  defp package do
     [
       maintainers: ["KIM Keep In Mind"],
       files: ~w(lib mix.exs README.md LICENSE),
