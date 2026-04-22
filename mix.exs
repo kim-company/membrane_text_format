@@ -6,7 +6,7 @@ defmodule Membrane.Text.MixProject do
   def project do
     [
       app: :membrane_text_format,
-      version: "1.0.0",
+      version: "1.1.0",
       elixir: "~> 1.16",
       start_permanent: Mix.env() == :prod,
       source_url: @github_url,
